@@ -1,0 +1,8 @@
+{
+    "python.pythonPath": "env/bin/python",
+    "python.formatting.autopep8Path": "env/bin/autopep8",
+    "python.linting.pylintPath": "env/bin/pylint",
+    "python.linting.pylintArgs": [
+      "--extension-pkg-whitelist=RPi"
+    ]
+}
