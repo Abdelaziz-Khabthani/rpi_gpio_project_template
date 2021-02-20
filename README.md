@@ -5,7 +5,7 @@ RPi.GPIO template project for the Raspberry Pi.
 VS Code is highly recommended.
 
 ## Getting started
-## Run the project
+### Run the project
 This project requires Python 3.
 
 First of all you need to create a virtual environment
@@ -17,7 +17,7 @@ Activate you virtual environment
 Install dependencies
 `python -m pip install -r requirements/dev.txt`
 
-## Install the module
+### Install the module
 To locally install the module you can execute the following command from the root of the project
 `python -m pip install -e .`
 
