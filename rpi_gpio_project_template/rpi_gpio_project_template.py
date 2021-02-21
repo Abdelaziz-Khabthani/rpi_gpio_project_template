@@ -33,8 +33,7 @@ class Main:
 
 def main():
     """
-    Global function to initiate the module
-    used for setup.py as an enttry point
+    Global function to initiate the module (used for setup.py as an enttry point)
     """
     Main().start()
 
