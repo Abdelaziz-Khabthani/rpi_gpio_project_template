@@ -21,6 +21,7 @@ setup(
         include=['rpi_gpio_project_template', 'rpi_gpio_project_template.*']
     ),
     install_requires=[
-        'RPi.GPIO==0.7.0'
+        'RPi.GPIO==0.7.0',
+        'smbus2==0.4.1'
     ]
 )
