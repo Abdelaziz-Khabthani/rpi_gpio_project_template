@@ -21,8 +21,6 @@ setup(
         include=['rpi_gpio_project_template', 'rpi_gpio_project_template.*']
     ),
     install_requires=[
-        'colorzero==1.1',
-        'gpiozero==1.5.1',
-        'RPi.GPIO==0.7.0',
+        'RPi.GPIO==0.7.0'
     ]
 )
