@@ -2,9 +2,8 @@
 import atexit
 import RPi.GPIO as GPIO
 
-class Main:
+class RpiGpioProjectTemplate:
     """ Main class program """
-
     def __init__(self):
         """ Insance fields definition """
 
@@ -14,8 +13,6 @@ class Main:
 
     def _loop(self):
         """ Loop function (Will execute every tick) """
-        while True:
-            pass
 
     def _clean(self):
         """ Clean up function (Will execute when program exits) """
@@ -25,17 +22,16 @@ class Main:
         """ Entrypoint of the program """
         try:
             self._setup()
-            self._loop()
+            while True:
+                self._loop()
         except (KeyboardInterrupt, SystemExit):
             self._clean()
         finally:
             self._clean()
 
 def main():
-    """
-    Global function to initiate the module (used for setup.py as an enttry point)
-    """
-    Main().start()
+    """ Global function to initiate the module (used for setup.py as an enttry point) """
+    RpiGpioProjectTemplate().start()
 
 if __name__ == "__main__":
     main()

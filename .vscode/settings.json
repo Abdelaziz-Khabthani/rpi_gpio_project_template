@@ -2,14 +2,5 @@
   "python.pythonPath": "env/bin/python",
   "python.formatting.autopep8Path": "env/bin/autopep8",
   "python.formatting.provider": "autopep8",
-  "python.linting.pylintPath": "env/bin/pylint",
-  "python.linting.pylintArgs": [
-    "--extension-pkg-whitelist=RPi",
-    "--max-line-length=140",
-    "--min-public-methods=1",
-    "--max-attributes=20"
-  ],
-  "python.formatting.autopep8Args": [
-    "--max-line-length=140"
-  ],
+  "python.linting.pylintPath": "env/bin/pylint"
 }
