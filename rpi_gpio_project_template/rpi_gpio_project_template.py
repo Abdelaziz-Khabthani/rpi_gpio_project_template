@@ -2,8 +2,10 @@
 import atexit
 import RPi.GPIO as GPIO
 
+
 class RpiGpioProjectTemplate:
     """ Main class program """
+
     def __init__(self):
         """ Insance fields definition """
 
@@ -29,9 +31,11 @@ class RpiGpioProjectTemplate:
         finally:
             self._clean()
 
+
 def main():
     """ Global function to initiate the module (used for setup.py as an enttry point) """
     RpiGpioProjectTemplate().start()
+
 
 if __name__ == "__main__":
     main()
