@@ -15,7 +15,6 @@ class RpiGpioProjectTemplate:
 
     def _setup(self):
         """ Setup function (Will execute only one time) """
-        atexit.register(self._clean)
 
     def _loop(self):
         """ Loop function (Will execute every tick) """
@@ -26,6 +25,7 @@ class RpiGpioProjectTemplate:
 
     def start(self):
         """ Entrypoint of the program """
+        atexit.register(self._clean)
         try:
             self._setup()
             time.sleep(self._init_delay)
