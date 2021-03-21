@@ -25,8 +25,8 @@ class RpiGpioProjectTemplate:
 
     def start(self):
         """ Entrypoint of the program """
-        atexit.register(self._clean)
         try:
+            atexit.register(self._clean)
             self._setup()
             time.sleep(self._init_delay)
             while True:
