@@ -16,11 +16,9 @@ class RpiGpioProjectTemplate:
     def _setup(self):
         """ Setup function (Will execute only one time) """
         atexit.register(self._clean)
-        time.sleep(self._init_delay)
 
     def _loop(self):
         """ Loop function (Will execute every tick) """
-        time.sleep(self._loop_delay)
 
     def _clean(self):
         """ Clean up function (Will execute when program exits) """
@@ -30,8 +28,10 @@ class RpiGpioProjectTemplate:
         """ Entrypoint of the program """
         try:
             self._setup()
+            time.sleep(self._init_delay)
             while True:
                 self._loop()
+                time.sleep(self._loop_delay)
         except (KeyboardInterrupt, SystemExit):
             self._clean()
         finally:
